@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <h1>Calculator</h1>
+    <form name = "calci">
+        <table>
+        <tr>
+            <th>
+                <input id ="display" type="text" name="inputbox">
+            </th>
+        </tr>
+        </table>
+        <div class="operator">
+            <div class="grid-item ">
+                <input type = "button" value ="7" onclick="calci.inputbox.value+='7'">
+            </div>
+            <div class="grid-item ">
+                <input type = "button" value ="8" onclick="calci.inputbox.value+='8'">
+            </div>
+            <div class="grid-item ">
+                <input type = "button" value ="9" onclick="calci.inputbox.value+='9'">
+            </div>
+            <div class="grid-item ">
+                <input type = "button" value ="x" onclick="calci.inputbox.value+='*'">
+            </div>
+        </div>
+        <div class="operator">
+            <div class="grid-item ">
+                <input type = "button" value ="4" onclick="calci.inputbox.value+='4'">
+            </div>
+            <div class="grid-item ">
+                <input type = "button" value ="5" onclick="calci.inputbox.value+='5'">
+            </div>
+            <div class="grid-item ">
+                <input type = "button" value ="6" onclick="calci.inputbox.value+='6'">
+            </div>
+            <div class="grid-item ">
+                <input type = "button" value ="-" onclick="calci.inputbox.value+='-'">
+            </div>
+        </div>
+        <div class="operator">
+            <div class="grid-item ">
+                <input type = "button" value ="1" onclick="calci.inputbox.value+='1'">
+            </div>
+            <div class="grid-item ">
+                <input type = "button" value ="2" onclick="calci.inputbox.value+='2'">
+            </div>
+            <div class="grid-item ">
+                <input type = "button" value ="3" onclick="calci.inputbox.value+='3'">
+            </div>
+            <div class="grid-item ">
+                <input type = "button" value ="+" onclick="calci.inputbox.value+='+'">
+            </div>
+        </div>
+        <div class="operator">
+            <div class="grid-item ">
+                <input type = "button" value ="C" onclick="calci.inputbox.value=''">
+            </div>
+            <div class="grid-item ">
+                <input type = "button" value ="0" onclick="calci.inputbox.value+='0'">
+            </div>
+            <div class="grid-item ">
+                <input type = "button" value ="/" onclick="calci.inputbox.value+='/'">
+            </div>
+            <div class="grid-item ">
+                <input type = "button" value ="=" onclick="calci.inputbox.value=eval(calci.inputbox.value)">
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
